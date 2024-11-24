@@ -27,14 +27,48 @@ npm install
 npm start
 ```
 ## 2 . Architecture Overview
-
 ### Flow chart
+#### Page flow
+```mermaid
+  flowchart TD
+    Start([Start]) --> Decision{Add employee}
+    Decision -->|Submit| Task1[stored in Database]
+    Decision -->|Cancel| Task2[Back to home]
+    Task1 --> End([End])
+    Task2 --> End([End])
+```
+#### Process flow
 ```mermaid
 flowchart TD
-    User[User] -->|Interacts| Frontend[React Frontend]
-    Frontend -->|Sends API Requests| Backend[Spring Boot Backend]
-    Backend -->|Processes Request| Database[(Database)]
-    Database -->|Returns Data| Backend
-    Backend -->|Responds to Frontend| Frontend
-    Frontend -->|Displays User Feedback| User
+    User[User] -->|Submit form| Frontend[react-hooks-frontend]
+    Frontend -->|Sends data to database| Backend[springboot-backend]
+    Backend -->|Information Stored| Database[(Database)]
 ```
+## 3 . Roadmap
+### 3.1 Plan
+* Project overview and plan
+* Installation & Environment Setup
+* Build app and deploy
+* Testing
+* Documentation
+* Review
+### 3.2 In Progress
+* Installation 
+### 3.3 Completed
+* project overview and plan
+
+```mermaid
+gantt
+    title React App
+    dateFormat  MM-DD-YYYY
+    section Completed
+    project overview   :done, 11-24-2024, 11-24-2024
+    Installation   :done, 11-24-2024, 11-24-2024
+    section In Progress
+    Environment setup     :active, 11-24-2024, 11-24-2024
+    section Planned
+    Build and deploy : 11-25-2024, 11-26-2024
+    Testing and Review  : 11-27-2024, 11-27-2024
+```
+## Reference
+[Dockerhub](https://hub.docker.com/)
