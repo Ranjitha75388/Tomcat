@@ -53,7 +53,7 @@ flowchart TD
 * Documentation
 * Review
 ### 3.2 In Progress
-* Installation 
+* Installation & Environment setup
 ### 3.3 Completed
 * project overview and plan
 
