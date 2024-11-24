@@ -28,7 +28,7 @@ npm start
 ```
 ## 2 . Architecture Overview
 ### Flow chart
-#### Page flow
+#### Process flow
 ```mermaid
   flowchart TD
     Start([Start]) --> Decision{Add employee}
@@ -37,7 +37,7 @@ npm start
     Task1 --> End([End])
     Task2 --> End([End])
 ```
-#### Process flow
+#### Work flow
 ```mermaid
 flowchart TD
     User[User] -->|Submit form| Frontend[react-hooks-frontend]
