@@ -1,4 +1,5 @@
-Docker volumes are used to persist data and share data between containers
+Docker volumes are used to persist data and share data between containers.
+
 commands:
 docker volume create <volume> - Create a new Docker volume.
 docker volume ls  -         List all Docker volumes.
