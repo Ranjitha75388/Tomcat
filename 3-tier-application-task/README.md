@@ -64,10 +64,12 @@ gantt
     section Completed
     project overview   :done, 11-24-2024, 11-24-2024
     Installation   :done, 11-24-2024, 11-24-2024
-    section In Progress
     Environment setup     :active, 11-24-2024, 11-24-2024
+    Build and deploy    : 11-25-2024, 11-26-2024
+    section In Progress
+   Create a docker file : 11-26-2024, 11-27-2024
     section Planned
-    Build and deploy : 11-25-2024, 11-26-2024
+   
     Testing and Review  : 11-27-2024, 11-27-2024
 ```
 ## Reference
