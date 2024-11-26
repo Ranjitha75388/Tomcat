@@ -63,11 +63,11 @@ gantt
     dateFormat  MM-DD-YYYY
     section Completed
     project overview   :done, 11-24-2024, 11-24-2024
-    Installation   :done, 11-24-2024, 11-24-2024
-    Environment setup     :active, 11-24-2024, 11-24-2024
-    Build and deploy    : 11-25-2024, 11-26-2024
+    Installation       :done, 11-24-2024, 11-24-2024
+    Environment setup     :done, 11-24-2024, 11-24-2024
+    Build and deploy    : done, 11-25-2024, 11-26-2024
     section In Progress
-   Create a docker file : 11-26-2024, 11-27-2024
+   Create a docker file : active,11-26-2024, 11-27-2024
     section Planned
    
     Testing and Review  : 11-27-2024, 11-27-2024
