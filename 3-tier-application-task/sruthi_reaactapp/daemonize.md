@@ -45,7 +45,7 @@
     systemctl status app_ems.service
   ```
 2. Frontend
-   * create a folder opt/react-backend
+* create a folder opt/react-backend
       ```bash
        mkdir opt/react-backend
       ```
