@@ -1,15 +1,4 @@
-## Run front-end in browser
-
-[Download ems-ops-phase-0.zip](https://github.com/Ranjitha75388/Tomcat/blob/main/3-tier-application-task/ems-ops-phase-0.zip)
-
-### Move the project from local to wsl
-```bash
-mv /mnt/c/Users/sreem/Downloads/ems-ops-phase-0.zip /home/sruthi/
-```
-### Unzip the project
-```bash
-unzip ems-ops-phase-0.zip
-```
+## Run the application
 ### Move to frontend directory
 ```bash
 ~/ems-ops-phase-0/react-hooks-frontend$
