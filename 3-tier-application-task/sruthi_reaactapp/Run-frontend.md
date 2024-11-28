@@ -25,3 +25,14 @@ npm start
 ## Run the application in browser
 > [http://localhost:3000](http://localhost:3000)
 
+### Error
+#### Err 1 : 
+If any npm start occurs,
+![image](https://github.com/user-attachments/assets/760c7c79-3f6f-4afa-aad3-64d641725890)
+
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
+npm start
+```
+
+
