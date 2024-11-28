@@ -6,9 +6,9 @@
 sudo nano /src/main/resources/application.properties
 ```
 ![image](https://github.com/user-attachments/assets/68fc7f6e-a5de-494f-84b3-b887b8fa8a81)
-* spring.datasource.url=jdbc:mysql://localhost:3306/<databasename>?useSSL=false
-* spring.datasource.username=<username>
-* spring.datasource.password=<password>
+* spring.datasource.url=jdbc:mysql://localhost:3306/<b>databasename</b>?useSSL=false
+* spring.datasource.username=<b>username</b>
+* spring.datasource.password=<b>password</b>
 ### Move to pom.xml folder
 > ~/ems-ops-phase-0/springboot-backend$ 
 ### Run the pom.xml to install the dependencies inside the pom file using maven tool
