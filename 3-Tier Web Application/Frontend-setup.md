@@ -66,7 +66,10 @@ Navigate to package.json file
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  ```
+```
+```bash
+   npm start
+   ```
 
 #### Why Include --openssl-legacy-provider?
 
