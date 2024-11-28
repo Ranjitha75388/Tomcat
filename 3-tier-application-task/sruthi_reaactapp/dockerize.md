@@ -111,4 +111,17 @@ networks:
 volumes:
   mysql-data:
     driver: local
-    ```
+```
+### To build the compose file
+  ```bash
+  docker-compose build
+```
+### To compose the application
+ ```bash
+  docker-compose up -d
+```
+> ## Finally application dockerize and run : 
+![image](https://github.com/user-attachments/assets/e2df7c4d-09d4-4bfd-b0db-fbe5e9ecc317)
+
+> ⚠️ **Notes:** Attach local volume to Database container in docker-compose.yml file.
+
