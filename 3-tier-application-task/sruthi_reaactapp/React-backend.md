@@ -1,4 +1,14 @@
 ## Set up the backend
+[Download ems-ops-phase-0.zip](https://github.com/Ranjitha75388/Tomcat/blob/main/3-tier-application-task/ems-ops-phase-0.zip)
+
+### Move the project from local to wsl
+```bash
+mv /mnt/c/Users/sreem/Downloads/ems-ops-phase-0.zip /home/sruthi/
+```
+### Unzip the project
+```bash
+unzip ems-ops-phase-0.zip
+```
 ### Move to the backend directory
 > ~/ems-ops-phase-0/springboot-backend$
 ### Open application.properties to update database
