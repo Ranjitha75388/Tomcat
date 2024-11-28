@@ -29,7 +29,7 @@ npm start
 #### Err 1 : 
 If any npm start occurs,
 ![image](https://github.com/user-attachments/assets/760c7c79-3f6f-4afa-aad3-64d641725890)
-
+Use this following command,
 ```bash
 export NODE_OPTIONS=--openssl-legacy-provider
 npm start
