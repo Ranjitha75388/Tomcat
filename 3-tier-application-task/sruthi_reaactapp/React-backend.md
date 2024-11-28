@@ -19,12 +19,14 @@ mvn clean
 ```bash
 mvn install
 ```
-* After the installation, target/ folder created.
+* After the installation, <b>target/</b> folder created.
   ![image](https://github.com/user-attachments/assets/bf3886bb-ddd7-4791-b84d-362f9a1b6cc2)
-* Inside the target/ folder, *jar is createde
+* Inside the target/ folder, *jar is created
   ![image](https://github.com/user-attachments/assets/6ed9a612-38d5-4bc4-83c8-ded5e2d1b2e0)
 ### Run the jar file inside the folder
 ```bash
 java -jar springboot-backend-0.0.1-SNAPSHOT.jar
 ```
 ![image](https://github.com/user-attachments/assets/ee66f57e-b0cb-4be4-bb3c-e41c87e52039)
+
+## After setting up the backend, move to frontend
