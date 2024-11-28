@@ -52,9 +52,9 @@
     ```
   * move to frontend folder
     > ~/ems-ops-phase-0/react-hooks-frontend$
-* start the application
-  ```bash
-     npm run build
+  * start the application
+    ```bash
+       npm run build
     ```
 > After build the application, build/ folder is created inside the frontend
 ![image](https://github.com/user-attachments/assets/4019dde1-a0c9-4be8-be46-708f4d828df9)
