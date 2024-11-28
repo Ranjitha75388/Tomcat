@@ -35,4 +35,5 @@ java -jar springboot-backend-0.0.1-SNAPSHOT.jar
 ### Err 2 :
 ![Build failure](https://github.com/user-attachments/assets/01b4fef8-fed1-49c2-8336-85017a5eccd0)
 
+### soln : 
 Check the database URL in application.properties
