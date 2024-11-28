@@ -1,4 +1,4 @@
-## Run backend with frontend
+## Set up the backend
 ### Move to the backend directory
 > ~/ems-ops-phase-0/springboot-backend$
 ### Open application.properties to update database
