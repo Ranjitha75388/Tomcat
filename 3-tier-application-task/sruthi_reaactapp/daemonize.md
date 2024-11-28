@@ -44,5 +44,53 @@
     sudo systemctl start app_ems.service
     systemctl status app_ems.service
   ```
-
-
+2. Frontend
+   * create a folder opt/react-backend
+      ```bash
+     mkdir opt
+     mkdir react-backend
+    ```
+  * move to frontend folder
+    > ~/ems-ops-phase-0/react-hooks-frontend$
+* start the application
+  ```bash
+     npm run build
+    ```
+> After build the application, build/ folder is created inside the frontend
+![image](https://github.com/user-attachments/assets/4019dde1-a0c9-4be8-be46-708f4d828df9)
+* Move the folder to /opt/react-backend folder
+   ```bash
+     sudo cp -r /home/sruthi/ems-ops-phase-0/react-hooks-frontend/build/ /home/sruthi/opt/react-backend/
+     ```
+* Create systemD service for frontend
+ ```bash
+  sudo nano /etc/systemd/system/reactapp_ems.service
+```
+* Paste this code :
+   ```bash
+        [Unit]
+        Description=StudentsystemApplication React service
+        After=syslog.target network.target
+        
+        [Service]
+        SuccessExitStatus=143
+        User=sruthi // os username
+        Type=simple
+        Restart=on-failure
+        RestartSec=10
+        
+        WorkingDirectory=/opt/react-backend/
+        ExecStart=serve -s build
+        ExecStop=/bin/kill -15 $MAINPID
+        
+        [Install]
+        WantedBy=multi-user.target
+```
+* Daemon Reload & systemctl cmd
+```
+    sudo systemctl daemon-reload
+    sudo systemctl start reactapp_ems.service
+    systemctl status reactapp_ems.service
+```  
+> Both frontend and backend daemonize
+![image](https://github.com/user-attachments/assets/28174231-172e-4cea-8665-3696bade7e5e)
