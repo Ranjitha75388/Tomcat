@@ -90,6 +90,6 @@
     sudo systemctl daemon-reload
     sudo systemctl start reactapp_ems.service
     systemctl status reactapp_ems.service
-```  
+  ```  
 > Both frontend and backend daemonize
-![image](https://github.com/user-attachments/assets/28174231-172e-4cea-8665-3696bade7e5e)
+  ![image](https://github.com/user-attachments/assets/28174231-172e-4cea-8665-3696bade7e5e)
