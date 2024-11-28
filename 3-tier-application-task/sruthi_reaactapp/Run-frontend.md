@@ -1,38 +1,38 @@
-### Run front-end in browser
+## Run front-end in browser
 
 [Download ems-ops-phase-0.zip](https://github.com/Ranjitha75388/Tomcat/blob/main/3-tier-application-task/ems-ops-phase-0.zip)
 
-## Move the project from local to wsl
+### Move the project from local to wsl
 ```bash
 mv /mnt/c/Users/sreem/Downloads/ems-ops-phase-0.zip /home/sruthi/
 ```
-## Unzip the project
+### Unzip the project
 ```bash
 unzip ems-ops-phase-0.zip
 ```
-## Move to frontend directory
+### Move to frontend directory
 ```bash
 ~/ems-ops-phase-0/react-hooks-frontend$
 ```
-## Install npm to start the frontend
+### Install npm to start the frontend
 ```bash
 npm install
 ```
-## Run the application
+### Run the application
 ```bash
 npm start
 ```
-## Run the application in browser
+### Run the application in browser
 > [http://localhost:3000](http://localhost:3000)
-### Output
-#### Home
+#### Output
+##### Home
 ![image](https://github.com/user-attachments/assets/badbb7e4-3405-4a46-9724-7b249d9db447)
-#### Add employee
+##### Add employee
 ![image (1)](https://github.com/user-attachments/assets/dc5ae649-7084-457d-b28b-10e2ddf2fb43)
 
 
-### Error
-#### Err 1 : 
+## Error
+### Err 1 : 
 If any npm start occurs,
 ![image](https://github.com/user-attachments/assets/760c7c79-3f6f-4afa-aad3-64d641725890)
 Use this following command,
