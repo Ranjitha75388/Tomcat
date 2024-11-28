@@ -19,7 +19,7 @@
  sudo nano /etc/systemd/system/app_ems.service
   ```
  * Paste this code :
-```bash
+      ```bash
        [Unit]
         Description=StudentsystemApplication Java service
         After=syslog.target network.target
@@ -37,7 +37,7 @@
         
         [Install]
         WantedBy=multi-user.target
-  ```
+        ```
 * Daemon Reload & systemctl cmd
    ```bash
     sudo systemctl daemon-reload
@@ -84,9 +84,9 @@
         
         [Install]
         WantedBy=multi-user.target
-```
+    ```
 * Daemon Reload & systemctl cmd
-```
+  ```bash
     sudo systemctl daemon-reload
     sudo systemctl start reactapp_ems.service
     systemctl status reactapp_ems.service
