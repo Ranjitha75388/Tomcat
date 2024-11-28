@@ -29,4 +29,10 @@ java -jar springboot-backend-0.0.1-SNAPSHOT.jar
 ```
 ![image](https://github.com/user-attachments/assets/ee66f57e-b0cb-4be4-bb3c-e41c87e52039)
 
-## After setting up the backend, move to frontend
+## Error
+### Err 1 :
+![Error](https://github.com/user-attachments/assets/9cf4062b-dd5b-4460-8808-50435b66f9be)
+### Err 2 :
+![Build failure](https://github.com/user-attachments/assets/01b4fef8-fed1-49c2-8336-85017a5eccd0)
+
+Check the database URL in application.properties
