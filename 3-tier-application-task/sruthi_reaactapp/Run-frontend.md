@@ -1,5 +1,5 @@
 ### Run front-end in browser
 
-[unzip the file](https://github.com/Ranjitha75388/Tomcat/tree/main/3-tier-application-task/ems-ops-phase-0)
+[Download ems-phase-0.zip](https://github.com/Ranjitha75388/Tomcat/releases/download/v1.0/ems-phase-0.zip)
 
 
