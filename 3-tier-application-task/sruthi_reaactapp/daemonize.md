@@ -47,9 +47,8 @@
 2. Frontend
    * create a folder opt/react-backend
       ```bash
-     mkdir opt
-     mkdir react-backend
-    ```
+       mkdir opt/react-backend
+      ```
   * move to frontend folder
     > ~/ems-ops-phase-0/react-hooks-frontend$
   * start the application
