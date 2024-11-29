@@ -62,8 +62,8 @@
      sudo cp -r /home/sruthi/ems-ops-phase-0/react-hooks-frontend/build/ /home/sruthi/opt/react-backend/
      ```
 * Install Serve node package
-*  ```bash
-  npm install -g serve
+   ```bash
+   npm install -g serve
    ```
 * Create systemD service for frontend
  ```bash
