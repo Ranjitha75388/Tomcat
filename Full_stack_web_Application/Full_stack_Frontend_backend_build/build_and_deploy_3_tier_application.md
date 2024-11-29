@@ -239,7 +239,7 @@
 
 -**Step11:java -jar springboot-backend-0.0.1-SNAPSHOT.jar**     ///(command to run springboot backend) 
 
-![](Aspose.Words.c43bf1f5-90b6-446b-a4b3-9828c4ef3902.007.png)                       
+![](Aspose.Words.c43bf1f5-90b6-446b-a4b3-9828c4ef3902.007.png)
 
 `     `####Before running check if any application runs on port `8080` in web browser by using
 
