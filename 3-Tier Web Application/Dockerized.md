@@ -162,4 +162,10 @@ docker-compose ps
 http://localhost:3000/employee
 ![image](https://github.com/user-attachments/assets/189ee97c-6bb9-4608-a3b0-80920fcea8c0)
 
+##### Error :
+
+![Screenshot (883)](https://github.com/user-attachments/assets/2bf20358-bcf4-4187-803c-8449a90fe92a)
+I encountered an issue where the container was in an exited state due to a port conflict. After identifying the container in the exited state and restarting it, the container worked fine.
+![Screenshot (888)](https://github.com/user-attachments/assets/0e0c8866-b4fc-4677-8753-29ed5b1bc38f)
+
 
