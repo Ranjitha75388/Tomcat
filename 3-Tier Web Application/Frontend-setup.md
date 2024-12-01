@@ -1,4 +1,5 @@
 # Frontend Setup
+![Screenshot (903)](https://github.com/user-attachments/assets/8296f560-bc0f-486d-892e-8b53347d3b15)
 
 ### Run the Application
 1. Move to the Frontend Directory
