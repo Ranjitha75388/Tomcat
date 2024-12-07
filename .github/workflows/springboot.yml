@@ -1,7 +1,10 @@
-name: Build and Push sprinbootDocker Image
+name: CI/CD Pipeline
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -13,24 +16,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v2
         with:
           java-version: '17'
+          distribution: 'adopt'
 
       - name: Build with Maven
         run: mvn clean package
+        working-directory: ./backend  # Adjust this path if your pom.xml is located elsewhere
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          password: ${{ secrets.DOCKERHUB__TOKEN }}
 
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: ./app  # Specify the context directory where the Dockerfile is located
-          dockerfile: Dockerfile  # Specify the Dockerfile path relative to the context
-          push: true  # Set to true if you want to push the image to a registry
-          tags: ranjithalogesh/my-spring-boot-app:latest  # Specify your image name and tag
+      - name: Build Docker image
+        run: |
+          docker build -t ranjithalogesh/spring-boot-image:latest ./backend  # Adjust context as needed
+
+      - name: Push Docker image to Docker Hub
+        run: |
+          docker push ranjithalogesh/spring-boot-image:latest
