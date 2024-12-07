@@ -23,7 +23,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn clean install -U
+        run: mvn clean install
 
       - name: Run Tests
         run: mvn test
@@ -38,7 +38,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-       - name: Push Docker image to Docker Hub
-         run: |
+      - name: Push Docker image to Docker Hub
+        run: |
           docker tag my-spring-boot-app ${{ secrets.DOCKERHUB_USERNAME }}/my-spring-boot-app:latest
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/my-spring-boot-app:latest
