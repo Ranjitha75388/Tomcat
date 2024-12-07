@@ -1,33 +1,10 @@
-# Use an OpenJDK image
-FROM openjdk:17-jdk-slim
+FROM openjdk:8-jdk
 
-# Set the working directory
+RUN mkdir /app
+
+COPY app.jar /app/app.jar
+
 WORKDIR /app
 
-# Copy the JAR file into the image
-COPY /home/logi/Downloads/old-files/ems-ops-phase-0/springboot-backend/target/springboot-backend-0.0.1-SNAPSHOT.jar app.jar
-
-# Expose port 8080 for the backend
 EXPOSE 8080
-
-# Run the Spring Boot application
-CMD ["java", "-jar", "app.jar"]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ENTRYPOINT ["java", "-jar", "app.jar"]
