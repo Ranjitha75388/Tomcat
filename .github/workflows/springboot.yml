@@ -27,11 +27,10 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build Docker image
-        run: |
-          docker build -t my-spring-boot-app .
-          docker tag my-spring-boot-app ranjithalogesh/my-spring-boot-app:latest
-
-      - name: Push Docker image to Docker Hub
-        run: |
-          docker push ranjithalogesh/my-spring-boot-app:latest
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: ./app  # Specify the context directory where the Dockerfile is located
+          dockerfile: Dockerfile  # Specify the Dockerfile path relative to the context
+          push: true  # Set to true if you want to push the image to a registry
+          tags: ranjithalogesh/my-spring-boot-app:latest  # Specify your image name and tag
