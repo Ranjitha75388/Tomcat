@@ -24,7 +24,6 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean package
-        working-directory: ./backend  # Adjust this path if your pom.xml is located elsewhere
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
