@@ -1,20 +1,33 @@
-# Use the official Node.js image as a base
-FROM node:14
+# Use an OpenJDK image
+FROM openjdk:17-jdk-slim
 
-# Set the working directory inside the container
+# Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json files to the working directory
-COPY package*.json ./
+# Copy the JAR file into the image
+COPY target/springboot-backend-0.0.1-SNAPSHOT.jar app.jar
 
-# Install dependencies
-RUN npm install
+# Expose port 8080 for the backend
+EXPOSE 8080
 
-# Copy the rest of the application code to the working directory
-COPY . .
+# Run the Spring Boot application
+CMD ["java", "-jar", "app.jar"]
 
-# Expose port 3000 for the application
-EXPOSE 3000
 
-# Command to run the application
-CMD ["npm", "start"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
