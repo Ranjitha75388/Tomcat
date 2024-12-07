@@ -22,9 +22,8 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
 
-      - name: List files in parent directory
-        run: ls -la /home/runner/work/Tomcat/Tomcat/
-
+      - name: List files in springboot-backend directory
+        run: ls -la ./springboot-backend
 
       - name: Build with Maven
         run: mvn clean package
