@@ -24,7 +24,7 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean package
-        working-directory: /home/logi/Downloads/old-files/ems-ops-phase-0/springboot-backend
+        working-directory: ./springboot-backend
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
