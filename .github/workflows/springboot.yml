@@ -1,4 +1,4 @@
-oname: Build and Push springboot Docker Image
+name: Build and Push springboot Docker Image
 
 on:
   push:
