@@ -4,7 +4,7 @@ RUN mkdir /app
 
 WORKDIR /app
 
-COPY springboot/target/springboot-backend-0.0.1-SNAPSHOT.jar .
+COPY ./springboot/target/springboot-backend-0.0.1-SNAPSHOT.jar .
 
 EXPOSE 8080
 
