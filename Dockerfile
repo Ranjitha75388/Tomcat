@@ -2,7 +2,7 @@ FROM openjdk:8-jdk
 
 RUN mkdir /app
 
-COPY /springboot/target/springboot-backend-0.0.1-SNAPSHOT.jar /app
+COPY ./springboot/target/springboot-backend-0.0.1-SNAPSHOT.jar /app
 
 WORKDIR /app
 
