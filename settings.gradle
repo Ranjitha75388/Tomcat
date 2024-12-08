@@ -1,2 +1,0 @@
-rootProject.name = 'your-project-name'  // Replace with your actual project namerootProject.name = 'your-root-project-name'
-include 'subproject1', 'subproject2'  // List all subprojects here
